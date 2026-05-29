@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="(new model)" id="id-8a9ef66d90c74040994975825902f53f" version="5.0.0">
-  <folder name="Strategy" id="id-60c930ee96484e659e9419507ae5c140" type="strategy"/>
-  <folder name="Business" id="id-24090161abec47d3869fb23036c0c703" type="business"/>
+  <folder name="Strategy" id="id-60c930ee96484e659e9419507ae5c140" type="strategy">
+    <element xsi:type="archimate:Capability" name="Gestión digital del paciente" id="id-cf39b0b324e54e82bf416cb45333381f">
+      <property key="Madurez AS-IS" value="1"/>
+      <property key="Madurez TO-BE" value="4"/>
+    </element>
+    <element xsi:type="archimate:Capability" name="Experiencia omnicanal" id="id-a22738d0bb2440d6b06d2bb42205c1ad">
+      <property key="Madurez AS-IS" value="1"/>
+      <property key="Madurez TO-BE" value="4"/>
+    </element>
+    <element xsi:type="archimate:Capability" name="Telemedicina" id="id-ed21693d371e4a3b81e4d6b434bcc9f0">
+      <property key="Madurez AS-IS" value="1"/>
+      <property key="Madurez TO-BE" value="4"/>
+    </element>
+    <element xsi:type="archimate:Capability" name="Gestión clínica integrada" id="id-5c6b5648d18743e48dbb1de818260b87">
+      <property key="Madurez AS-IS" value="1"/>
+      <property key="Madurez TO-BE" value="4"/>
+    </element>
+    <element xsi:type="archimate:Capability" name="Analítica clínica" id="id-2806a4076fcf4da2b1f2ebc3f3c23cf4">
+      <property key="Madurez AS-IS" value="1"/>
+      <property key="Madurez TO-BE" value="4"/>
+    </element>
+    <element xsi:type="archimate:Capability" name="Ciberseguridad" id="id-3a8bdd0c704a450db6dc4732eb464d45">
+      <property key="Madurez AS-IS" value="2"/>
+      <property key="Madurez TO-BE" value="5"/>
+    </element>
+  </folder>
+  <folder name="Business" id="id-24090161abec47d3869fb23036c0c703" type="business">
+    <element xsi:type="archimate:BusinessService" name="Reserva online" id="id-af524b6027d7410497f377bc550f1ab7"/>
+    <element xsi:type="archimate:BusinessService" name="Teleconsulta" id="id-59f92a53817249cd9c991dd8201b8681"/>
+    <element xsi:type="archimate:BusinessService" name="Historia clínica digital" id="id-f85286e8ffbc4bd09f340f62dc6e4253"/>
+    <element xsi:type="archimate:BusinessService" name="Pago en línea" id="id-6783631c185b48008fe2848f8b46a1c3"/>
+  </folder>
   <folder name="Application" id="id-490b0b789f1a47a3a985638c09eb3019" type="application"/>
   <folder name="Technology &amp; Physical" id="id-4b23776d9f834ce386b729da2de3a5dd" type="technology"/>
   <folder name="Motivation" id="id-755cb3a23ac345468e2dfc9e1036e6e3" type="motivation">
@@ -14,6 +44,7 @@
     <element xsi:type="archimate:Stakeholder" name="Dirección Médica" id="id-35c6d91fc0014c8fb1f3ab9f68c5a8f1"/>
     <element xsi:type="archimate:Driver" name="Competencia digital" id="id-2d36b2e57c1d432d8c44ce1f5b618fcf"/>
     <element xsi:type="archimate:Assessment" name="Pérdida de pacientes por canales limitados" id="id-c18c96982dd443e3a0ccc966572160c0"/>
+    <element xsi:type="archimate:Constraint" name="Constraint" id="id-ffe2c6a0c9ae4eb7abb36d45db20fb04"/>
   </folder>
   <folder name="Implementation &amp; Migration" id="id-892793d05e7d44e788b4148941ccf1e1" type="implementation_migration"/>
   <folder name="Other" id="id-fa0883cde01946bcae553d62ff037451" type="other"/>
@@ -42,6 +73,10 @@
     <element xsi:type="archimate:InfluenceRelationship" id="id-a583f40d49fb4d9f844bd5f465fbb0ca" source="id-4dcf91d122fd4e718909558da4b5a217" target="id-76f88a3bcbef4fbea2911e740f4fef33"/>
     <element xsi:type="archimate:InfluenceRelationship" id="id-0cc57ccd135042abb30d9c017ce9ea5b" source="id-b4f0c5b5364442bfbbbe37cefe15705a" target="id-cc5771cfb950404c94be2597ae032e66"/>
     <element xsi:type="archimate:RealizationRelationship" id="id-3ec932278cd84c6684edf5430908c0ff" source="id-b4f0c5b5364442bfbbbe37cefe15705a" target="id-76f88a3bcbef4fbea2911e740f4fef33"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-ba19512e53cf4489af55cf4cff865001" source="id-af524b6027d7410497f377bc550f1ab7" target="id-cf39b0b324e54e82bf416cb45333381f"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-80465411fb634eb4a0da8feaa7e4b79a" source="id-59f92a53817249cd9c991dd8201b8681" target="id-ed21693d371e4a3b81e4d6b434bcc9f0"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-180cc038e2f24f73816b4abc8f1bbad4" source="id-f85286e8ffbc4bd09f340f62dc6e4253" target="id-5c6b5648d18743e48dbb1de818260b87"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-9d23e85badab495a92d9255d0868b797" source="id-6783631c185b48008fe2848f8b46a1c3" target="id-a22738d0bb2440d6b06d2bb42205c1ad"/>
   </folder>
   <folder name="Views" id="id-fb0fdbe261f141a596ec3306eba1ad89" type="diagrams">
     <element xsi:type="archimate:ArchimateDiagramModel" name="ClinicaSanFelipe_TOBE" id="id-2caf137cda024c45a0e2edde06b47196"/>
@@ -87,8 +122,65 @@
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" name="Mapa_capacidades" id="id-01785816b5b24d2ea0854e0729223955"/>
     <element xsi:type="archimate:ArchimateDiagramModel" name="Servicios_negocio" id="id-009530278e13478087edd90682d9fa30"/>
-    <element xsi:type="archimate:ArchimateDiagramModel" name="Arquitectura_aplicaciones" id="id-a93b0e20469b41329970475fa1e0e528"/>
-    <element xsi:type="archimate:ArchimateDiagramModel" name="Arquitectura_tecnologia" id="id-d93f0bf8280d412d828963328505f8ad"/>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="02 - Capacidades objetivo" id="id-a93b0e20469b41329970475fa1e0e528">
+      <child xsi:type="archimate:Group" id="id-d9b5705ffcfa47be851bf7a5f40fcb12" name="Cliente" textAlignment="1">
+        <bounds x="60" y="84" width="181" height="145"/>
+        <child xsi:type="archimate:DiagramObject" id="id-98d86b9a479743be8a25e28a25e2e5e5" archimateElement="id-cf39b0b324e54e82bf416cb45333381f">
+          <bounds x="24" y="24" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-e7d11cda545943bfac260cc40abec446" archimateElement="id-a22738d0bb2440d6b06d2bb42205c1ad">
+          <bounds x="12" y="84" width="120" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="id-3847c55ba6ee4e729232d8088d63880b" name="Operaciones" textAlignment="1">
+        <bounds x="300" y="84" width="253" height="140"/>
+        <child xsi:type="archimate:DiagramObject" id="id-8952da17a2d640f7b10d4ca5fdc4ee34" archimateElement="id-ed21693d371e4a3b81e4d6b434bcc9f0">
+          <bounds x="24" y="24" width="120" height="37"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-52784fddc7c44bed900faedab91dab77" archimateElement="id-5c6b5648d18743e48dbb1de818260b87">
+          <bounds x="84" y="72" width="120" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:Group" id="id-821e5866ff85405cac78059b23e56af7" name="Habilitadoras" textAlignment="1">
+        <bounds x="204" y="264" width="313" height="140"/>
+        <child xsi:type="archimate:DiagramObject" id="id-bf64d57d275e4be1b6b446540c777d5d" archimateElement="id-2806a4076fcf4da2b1f2ebc3f3c23cf4">
+          <bounds x="24" y="36" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-dc5a569281434583830f4a1e7a681530" archimateElement="id-3a8bdd0c704a450db6dc4732eb464d45">
+          <bounds x="156" y="48" width="120" height="55"/>
+        </child>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="03 - Servicios de negocio" id="id-d93f0bf8280d412d828963328505f8ad">
+      <child xsi:type="archimate:DiagramObject" id="id-f32a2241eceb418f9e44755cfd160231" archimateElement="id-af524b6027d7410497f377bc550f1ab7" type="1">
+        <bounds x="24" y="96" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-6354706eb41e4a07bd30784c0aa6e1f3" source="id-f32a2241eceb418f9e44755cfd160231" target="id-4a46d089647849a0953262bb14db806f" archimateRelationship="id-ba19512e53cf4489af55cf4cff865001"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-9251533f5d334bba9dae719cf1d709ea" archimateElement="id-59f92a53817249cd9c991dd8201b8681" type="1">
+        <bounds x="168" y="96" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-f652e8918dcb423697e5d5d5cea19bc2" source="id-9251533f5d334bba9dae719cf1d709ea" target="id-12068651a4e44231a90e818dc0a23024" archimateRelationship="id-80465411fb634eb4a0da8feaa7e4b79a"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-94786d79d7634ac1b5f97cdd08bd5b6d" archimateElement="id-f85286e8ffbc4bd09f340f62dc6e4253" type="1">
+        <bounds x="312" y="96" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-6d32485ee7b547bfb7bce48b49b4b3d7" source="id-94786d79d7634ac1b5f97cdd08bd5b6d" target="id-9c802d6542b24e199fdc3d6a9d5ce67c" archimateRelationship="id-180cc038e2f24f73816b4abc8f1bbad4"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-96988ca3ae91469295e2f4438629daa9" archimateElement="id-6783631c185b48008fe2848f8b46a1c3" type="1">
+        <bounds x="468" y="96" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-ec4ebe0b6bea45ab9213eeca971d9841" source="id-96988ca3ae91469295e2f4438629daa9" target="id-085f37928f2e4c88ab5b0df2f057bda5" archimateRelationship="id-9d23e85badab495a92d9255d0868b797"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-4a46d089647849a0953262bb14db806f" targetConnections="id-6354706eb41e4a07bd30784c0aa6e1f3" archimateElement="id-cf39b0b324e54e82bf416cb45333381f" type="1">
+        <bounds x="24" y="168" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-12068651a4e44231a90e818dc0a23024" targetConnections="id-f652e8918dcb423697e5d5d5cea19bc2" archimateElement="id-ed21693d371e4a3b81e4d6b434bcc9f0" type="1">
+        <bounds x="168" y="168" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-9c802d6542b24e199fdc3d6a9d5ce67c" targetConnections="id-6d32485ee7b547bfb7bce48b49b4b3d7" archimateElement="id-5c6b5648d18743e48dbb1de818260b87" type="1">
+        <bounds x="312" y="168" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-085f37928f2e4c88ab5b0df2f057bda5" targetConnections="id-ec4ebe0b6bea45ab9213eeca971d9841" archimateElement="id-a22738d0bb2440d6b06d2bb42205c1ad" type="1">
+        <bounds x="468" y="168" width="120" height="55"/>
+      </child>
+    </element>
     <element xsi:type="archimate:ArchimateDiagramModel" name="Vista_capas" id="id-51025fec6a6b46ca95922d6a8a0e1402"/>
   </folder>
 </archimate:model>
